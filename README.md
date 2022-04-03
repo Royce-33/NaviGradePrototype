@@ -13,8 +13,12 @@ The following command will run the app from command line:
 
 ## Authors
 Riley Adams
+
 Torin Borton-McCallum
+
 Jacob Cabral
+
 Chandler Mayberry
+
 Will Roberts
 
