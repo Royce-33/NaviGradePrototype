@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6aa874" height="61.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="900.0" />
+      <Text fill="WHITE" layoutX="376.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Grade" wrappingWidth="148.2117919921875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ChoiceBox layoutX="574.0" layoutY="137.0" prefHeight="26.0" prefWidth="250.0" />
+      <TextField layoutX="110.0" layoutY="137.0" prefHeight="26.0" prefWidth="250.0" />
+      <Text layoutX="574.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Code">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="110.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completed Tasks">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="110.0" layoutY="238.0" prefHeight="200.0" prefWidth="713.0" />
+      <Text layoutX="380.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade Percent Earned">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField layoutX="380.0" layoutY="487.0" prefHeight="15.0" prefWidth="172.0" />
+      <Button layoutX="616.0" layoutY="525.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="52.0" prefWidth="126.0" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button layoutX="761.0" layoutY="525.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="51.0" prefWidth="119.0" text="Save">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToHomePage" text="←">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

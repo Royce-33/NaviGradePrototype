@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="900.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="OVERLAY" height="416.0" layoutX="20.0" layoutY="383.0" stroke="#808080" strokeType="INSIDE" width="861.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6aa874" height="66.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="900.0" />
+            <Label layoutX="355.0" layoutY="11.0" text="Course Details" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="97.0" text="Course Code">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="303.0" layoutY="97.0" text="Colour">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="183.0" text="Grade Goal">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="267.0" text="Start Time">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="545.0" layoutY="820.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="66.0" prefWidth="165.0" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="720.0" layoutY="820.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="66.0" prefWidth="165.0" text="Save">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#backToHomePage" prefHeight="35.0" prefWidth="37.0" text="←">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <TextField layoutX="68.0" layoutY="136.0" prefHeight="35.0" prefWidth="136.0" />
+            <ColorPicker layoutX="303.0" layoutY="136.0" prefHeight="35.0" prefWidth="136.0" />
+            <Label layoutX="508.0" layoutY="97.0" text="Day(s)">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="509.0" layoutY="145.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="93.0" text="Monday" />
+            <CheckBox layoutX="509.0" layoutY="183.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="93.0" text="Thursday" />
+            <CheckBox layoutX="627.0" layoutY="219.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="93.0" text="Sunday" />
+            <CheckBox layoutX="627.0" layoutY="145.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="93.0" text="Tuesday" />
+            <CheckBox layoutX="627.0" layoutY="183.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="93.0" text="Friday" />
+            <CheckBox layoutX="748.0" layoutY="183.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="93.0" text="Saturday" />
+            <CheckBox layoutX="748.0" layoutY="145.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="93.0" text="Wednesday" />
+            <TextField layoutX="68.0" layoutY="219.0" prefHeight="35.0" prefWidth="136.0" />
+            <Label layoutX="425.0" layoutY="267.0" text="End Time">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="69.0" layoutY="310.0" prefHeight="25.0" prefWidth="214.0" />
+            <DatePicker layoutX="434.0" layoutY="310.0" prefHeight="25.0" prefWidth="214.0" />
+            <TableView layoutX="79.0" layoutY="413.0" prefHeight="310.0" prefWidth="743.0">
+              <columns>
+                <TableColumn prefWidth="374.0" text="Section" />
+                <TableColumn prefWidth="368.0" text="Percentage" />
+              </columns>
+            </TableView>
+            <Button layoutX="343.0" layoutY="729.0" mnemonicParsing="false" text="Add New Section">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <TextField alignment="CENTER" layoutX="167.0" layoutY="737.0" prefHeight="35.0" prefWidth="136.0" promptText="Section Name" />
+            <TextField alignment="CENTER" layoutX="602.0" layoutY="737.0" prefHeight="35.0" prefWidth="136.0" promptText="Weight  (%)" />
+            <Label layoutX="63.0" layoutY="823.0" text="Total Percentage Not 100%!" textFill="RED">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
