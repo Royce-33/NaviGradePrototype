@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="898.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6aa874" height="56.0" layoutX="-1.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="900.0" />
+      <Text fill="WHITE" layoutX="362.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Page" wrappingWidth="208.2117919921875">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="624.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="765.0" layoutY="535.0" mnemonicParsing="false" onAction="#switchToAddCourse" prefHeight="45.0" prefWidth="108.0" text="Update Course" />
+      <Button layoutX="672.0" layoutY="535.0" mnemonicParsing="false" onAction="#switchToAddGrade" prefHeight="45.0" prefWidth="93.0" text="Add Grade" />
+      <Button layoutX="579.0" layoutY="535.0" mnemonicParsing="false" onAction="#switchToAddTask" prefHeight="45.0" prefWidth="93.0" text="Add Task" />
+      <ProgressBar layoutX="614.0" layoutY="113.0" prefHeight="24.0" prefWidth="78.0" progress="0.73" />
+      <ProgressBar layoutX="712.0" layoutY="113.0" prefHeight="24.0" prefWidth="78.0" progress="0.39" />
+      <ProgressBar layoutX="808.0" layoutY="113.0" prefHeight="24.0" prefWidth="78.0" progress="0.65" />
+      <ProgressBar layoutX="615.0" layoutY="181.0" prefHeight="24.0" prefWidth="78.0" progress="0.6" />
+      <ProgressBar layoutX="713.0" layoutY="181.0" prefHeight="24.0" prefWidth="78.0" progress="0.44" />
+      <ProgressBar layoutX="809.0" layoutY="181.0" prefHeight="24.0" prefWidth="78.0" progress="0.22" />
+      <Button layoutX="738.0" layoutY="232.0" mnemonicParsing="false" onAction="#switchToGradeReport" prefHeight="33.0" prefWidth="148.0" text="Generate Grade Report" />
+      <LineChart layoutX="256.0" layoutY="75.0" prefHeight="179.0" prefWidth="314.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Circle fill="#1fff4e" layoutX="136.0" layoutY="165.0" radius="83.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <ScrollPane layoutX="12.0" layoutY="292.0" prefHeight="219.0" prefWidth="874.0">
+         <content>
+            <ListView nodeOrientation="LEFT_TO_RIGHT" prefHeight="243.0" prefWidth="871.0" />
+         </content>
+      </ScrollPane>
+      <Text layoutX="72.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentage" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Text>
+      <Text layoutX="722.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="818.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="625.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="723.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="819.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Section" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="12.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToHomePage" text="←">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
