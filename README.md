@@ -8,7 +8,7 @@ Use any IDE, in development we used Visual Studio Code and Eclipse.
 
 You need to change your runtime configuration to the following:
 ```
---module-path <HIS PATH FOR LIBRARY> --add-modules javafx.controls,javafx.fxml
+--module-path <YOUR PATH FOR LIBRARY> --add-modules javafx.controls,javafx.fxml
 ```
 See the screenshot below for an example in Eclipse:
 
